@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "outDir": "dist",
+        "alwaysStrict": true,
+        "strict": true,
+        "target": "ESNext",
+        "lib": ["ESNext", "DOM", "DOM.Iterable"]
+    },
+    "include": [
+        "src",
+        "node_modules/@types/puppeteer/index.d.ts",
+        "test/mock"
+    ],
+    "exclude": [
+        "node_modules",
+        "build"
+    ]
+}
