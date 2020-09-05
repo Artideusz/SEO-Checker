@@ -49,9 +49,9 @@ function displayBanner() {
 async function main() {
     displayBanner();
     const services = await getServices();
-    if(args.fullscan) {
+    if(args.customscan) {
         try {
-            let data = JSON.parse(await fs.readFile(args.fullscan, { encoding: "utf-8" }));
+            let data = JSON.parse(await fs.readFile(args.customscan, { encoding: "utf-8" }));
             
             let runningServices = [];
 
